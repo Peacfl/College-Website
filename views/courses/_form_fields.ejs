@@ -1,0 +1,21 @@
+<div class="form-group" style="padding-bottom: 10px;">
+    <label for="title">Title</label>
+    <input class="form-control" type="text" name="title" id="title" required value="<%= courses.title %>">
+    
+</div>
+<div class="form-group" style="padding-bottom: 10px;">
+    <label for="image">Upload Image:</label>
+    <input class="form-control" type="file" id="image" name="image" accept="image/*" required>
+</div>
+<div class="form-group" style="padding-bottom: 10px;">
+    <label for="Description">Description</label>
+    <textarea class="form-control" name="Description" required id="Description"><%= courses.description %></textarea>
+    
+</div>
+<div class="form-group" style="padding-bottom: 10px;">
+    <label for="Markdown">Markdown</label>
+    <textarea class="form-control" name="Markdown" required id="Markdown"><%= courses.markdown %></textarea>
+    
+</div>
+<a href="/home" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
