@@ -1,0 +1,166 @@
+/* pallete: 
+#0f81c7 dark blue
+#ffffff white
+#1b9eee light blue
+#0b6298 dark blue
+#e6e6e6 gray
+#4bb2f1 light blue
+#F0C987 peach
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "PT Sans", serif;
+
+
+}
+
+p {
+    color: white;
+}
+
+.home-title {
+    text-shadow: 3px 3px 5px black;
+    color: white;
+}
+
+h1 {
+    font-size: 8rem;
+    font-weight: 900;
+
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+#header {
+    font-size: 1.5rem;
+    font-family: "PT Sans", serif;
+    font-weight: 600;
+}
+
+
+.header-button {
+    color: white;
+    background-color: #1b9eee;
+    margin: 5px 0 0 10px;
+}
+
+
+#hero {
+    background-image: url("assets/hero-bg.jpg");
+    padding: 130px 50px;
+    background-size: cover;
+}
+
+#jumbotron {
+    background-color: #0b6298;
+}
+
+.jumbo-inner {
+    background-color: #1b9eee;
+}
+
+.jumbo-text {
+    font-size: 3rem;
+    color: yellow;
+    font-weight: 600;
+}
+
+.hero-button {
+    width: 250px;
+    height: 60px;
+    margin: 20px;
+}
+
+#career {
+    padding: 50px;
+}
+
+.career-text {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #0b6298;
+    text-decoration: underline;
+}
+
+.career-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f81c7;
+    padding-bottom: 10px;
+}
+
+.career-desc {
+    color: #3b3b3b;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#slogan {
+    padding: 5%;
+}
+
+.slogan-img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.slogan-desc {
+    color: #3b3b3b;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#notice{
+    padding: 5%;
+    background-color: #0b6298;
+}
+
+.notice-card{
+    max-height: 400px;
+}
+
+.notice-title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.notice-desc{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3b3b3b;
+}
+
+#apply{
+    padding: 5%;
+    background-image: url("/assets/apply-bg.jpg");
+    background-size: cover;
+}
+
+.apply-text{
+    color: #0f81c7;
+    text-shadow: 3px 3px 5px white;
+}
+
+#footer {
+    padding: 0 100px;
+    font-family: "PT Sans", serif;
+}
+
+footer { 
+    padding: 0;
+    margin: 0;
+}
+
+.footer-logo {
+    background-color: #0f81c7;
+    border-radius: 20px;
+    color: white;
+}

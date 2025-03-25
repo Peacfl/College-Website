@@ -1,0 +1,96 @@
+/* pallete: 
+#0f81c7 dark blue
+#ffffff white
+#1b9eee light blue
+#0b6298 dark blue
+#e6e6e6 gray
+#4bb2f1 light blue
+#F0C987 peach
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "PT Sans", serif;
+
+
+}
+
+p {
+    color: white;
+}
+
+.home-title {
+    text-shadow: 3px 3px 5px black;
+    color: white;
+}
+
+h1 {
+    font-size: 8rem;
+    font-weight: 900;
+
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+#header {
+    font-size: 1.5rem;
+    font-family: "PT Sans", serif;
+    font-weight: 600;
+}
+
+
+.header-button {
+    color: white;
+    background-color: #1b9eee;
+    margin: 5px 0 0 10px;
+}
+
+#sign-up{
+    padding: 5%;
+    background-color: #0f81c7;
+}
+
+.form-signin{
+    width: 35%;
+    background-color: #1b9eee;
+    padding: 2rem;
+    border-radius: 20px;
+    min-width: 300px;
+}
+
+.form-title{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.sign-email{
+    border-radius: 5px 5px 0 0;
+}
+
+.sign-pswd{
+    border-radius: 0 0 5px 5px;
+}
+
+#footer {
+    padding: 0 100px;
+    font-family: "PT Sans", serif;
+}
+
+footer { 
+    padding: 0;
+    margin: 0;
+}
+
+.footer-logo {
+    background-color: #0f81c7;
+    border-radius: 20px;
+    color: white;
+}
