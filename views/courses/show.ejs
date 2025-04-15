@@ -25,7 +25,6 @@
 </head>
 
 <body>
-
     <!--header starts here-->
     <section id="header">
         <div class="bar w-100 p-2" style="min-height: 25px; background-color: #0b6298;">
@@ -51,21 +50,13 @@
                                     <a class="nav-link" aria-current="page" href="/home">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About Us</a>
+                                    <a class="nav-link" href="/about">About Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link">Notice</a>
+                                    <a class="nav-link" href="/home#notice">Notice</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Courses
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/courses" role="button">Courses</a>
                                 </li>
                                 <li>
 
@@ -73,7 +64,8 @@
                                         onclick="window.location.href='/sign-up'">Sign In</button>
                                     <button type="button" class="btn btn-primary header-button"
                                         onclick="window.location.href='/log-in'">Log In</button>
-                                    <a href="/admin" class="btn btn-outline-success mt-1">Admin Panel</a>
+                                    <a href="/admin" class="btn btn-outline-success mt-1 collapse adminButton">Admin
+                                        Panel</a>
                                 </li>
                             </ul>
                         </div>
@@ -84,6 +76,7 @@
         </div>
     </section>
     <!--header ends here-->
+
     <div style="padding: 5% 10%; color: #1b9eee;">
         <a href="/home" class="btn btn-outline-primary mb-5" style="font-size: 1.5rem;">Go To Home</a>
 
