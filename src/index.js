@@ -25,20 +25,29 @@ onAuthStateChanged(auth, async (user) => {
     // https://firebase.google.com/docs/reference/js/auth.user
     const uid = user.uid;
     //console.log(uid);
-
+    
     //making query to fetch name
     const q = query(collection(db, "userdata"), where("uid", "==", uid));
     //fetch name
     const querySnapshot = await getDocs(q);
+    console.log("waddup");
     querySnapshot.forEach((doc) => {
       
       // doc.data() is never undefined for query doc snapshots
       //display name
+
+      if (doc.data().role == 'admin') {
+
+        //console.log(doc.data().role);
+        const adminButton = document.querySelector('.adminButton');
+        adminButton.classList.remove('collapse');
+      }
+
       const showName = document.querySelector(".user-name");
       if (showName) {
         if (doc.data().name) {
           showName.innerHTML = "Welcome, " + doc.data().name;
-          //console.log(doc.data().name);
+          console.log(doc.data().name);
         }
         else
           showName.innerHTML = "";
@@ -93,6 +102,7 @@ const signUpEmailPassword = async () => {
       const errorMessage = error.message;
       console.log(errorCode);
       console.log(errorMessage);
+      window.location.href = '/failure';
       // ..
     });
 
@@ -148,6 +158,7 @@ const logInEmailPassword = async () => {
       const errorMessage = error.message;
       console.log(errorCode);
       console.log(errorMessage);
+      window.location.href = '/failure';
     });
 
 }
@@ -179,9 +190,6 @@ if (logInButton) {
 
   });
 }
-
-
-
 
 
 // const UserCredential = await signInWithEmailAndPassword(auth, SignUpEmail, SignUpPassword);

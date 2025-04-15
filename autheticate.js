@@ -34,7 +34,6 @@ onAuthStateChanged(auth, async (user) => {
         const querySnapshot = await getDocs(q);
         querySnapshot.forEach((doc) => {
 
-
             if (doc.data().role != 'admin') {
 
                 //console.log(doc.data().role);
